@@ -155,7 +155,7 @@ func setupRateLimiter() fiber.Handler {
 func loadEnv() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Println(".env file not found, using environment variables")
 	}
 }
 
